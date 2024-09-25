@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header id="home">
+        <nav class="nav-link">
+          <a href="#home" class="home">Home</a>
+          <a href="#about" class="about">About</a>
+          <a href="#menu" class="menu">Products</a>
+          <a href="#contact-us" class="contact-us">Contact Us</a>
+        </nav>
+      <div class="shop-name-container">
+        <h1 >Lyka's Muffin</h1>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="about-container">
+        <h2 class="about-heading">ABOUT</h2>
+        <article class="Our-story-container">
+          <div class="left">
+            <figure>
+              <img src="image-muffins/pexels-ivan-samkov-5446909.jpg" alt="muffin-reference-1">
+            </figure>
+          </div>
+          <div>
+            <h3 class="heading">O<span>U</span>R STORY</h3>
+            <p>Our journey began with my niece, a young girl with a passion for baking. Watching her experiment in the kitchen inspired me to dive deeper into this delicious world. We spent countless afternoons creating scrumptious muffins together, filling our home with warmth and joy.</p>
+            <p>It was this shared love for baking that led me to open our muffin store, named after her. Our goal is to bring the same joy and creativity to our community through fresh, handmade muffins made with love.</p>
+            <p>Today, we offer a delightful variety of flavors, each crafted to celebrate the magic of baking. Join us in savoring the joy of muffins, and let’s create sweet memories together!</p>
+          </div>
+          <div class="clear"></div>
+          <aside>
+            <h3>Muffin Trivia</h3>
+            <details>
+              <summary>Origin of Muffins</summary>
+              <p>Did you know that muffins originated in England in the 18th century as a flatbread? The word "muffin" comes from the French word "moufflet," meaning a soft bread. Originally baked on a griddle, these treats were transformed in the 19th century by American bakers into the fluffy, cake-like muffins we know today. The first known muffin recipe was published in a cookbook in 1820, and since then, muffins have become a beloved breakfast staple worldwide!</p>
+            </details>
+          </aside>
+        </article>
+        <article class="image-ref">
+          <h3 class="tagline break-text">Where Every Muffin Tells a Story</h3>
+        </article>
+        <article class="homemade">
+          <div class="homemade-headings">
+            <h3>H<em>O</em>MEMA<em>D</em>E M<em>U</em>FFI<em>N</em>S</h3>
+          </div>
+          <div class="homemade-image-ref-1">
+            <figure>
+              <img src="image-muffins/pexels-ivan-samkov-5446903.jpg" alt="image-1" width="5628" height="3752">
+            </figure>
+          </div>
+          <div class="homemade-image-ref-2">
+            <figure>
+              <img src="image-muffins/muffins-1624142_1920.jpg" alt="image-2" width="1920" height="912">
+            </figure>
+          </div>
+        </article>
+      </section>
+      <section id="menu" class="menu-container">
+        <h2>OUR <span>PR<em>O</em>DU<em>C</em>TS</span></h2>
+        <div class="product-container">
+          <div class="product">
+            <figure>
+              <img src="image-muffins/Blueberry-DDC01065_1080x.jpg" alt="product-image" width="1080" height="1080">
+              <figcaption>BLUEBERRY MUFFIN</figcaption>
+            </figure>
+            <p>&#8369; 75.00</p>
+          </div>
+          <div class="product">
+            <figure>
+              <img src="image-muffins/Chocolate-DDC01342_1080x.jpg" alt="product-image" width="1080" height="1080">
+              <figcaption>CHOCOLATE MUFFIN</figcaption>
+            </figure>
+            <p>&#8369; 65.00</p>
+          </div>
+          <div class="product">
+            <figure>
+              <img src="image-muffins/Banana-DDC02215_720x.jpg" alt="product-image" width="720" height="720">
+              <figcaption>BANANA MUFFIN</figcaption>
+            </figure>
+            <p>&#8369; 65.00</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact-us" class="contact-us-container">
+        <h2>CONTACT US</h2>
+        <article class="open-hours-container">
+          <h3>Open Hours</h3>
+          <ul>
+            <li><span>Monday-Friday: </span>8:00 AM - 6:00 PM</li>
+            <li><span>Saturday: </span>10:00 AM - 4:00 PM</li>
+            <li><span>Sunday: </span>Closed</li>
+          </ul>
+        </article>
+        <article class="our-location-container">
+          <h3>Our Location</h3>
+          <address>
+            <p>#331 Ayala Street</p>
+            <p>Brgy. Tranca, Talisay, Batangas</p>
+          </address>
+        </article>
+        <div class="inquiries-container">
+          <p>For inquiries and concern reach us at</p>
+          <p>0912-345-6789</p>
+          <p>Or send us a message below</p>
+          <p>Well get back to you as soon as possible!</p>
+          <form id="myform" action="/submit" method="post">
+            <p>
+              <label for="name">Name: </label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </p>
+            <fieldset>
+              <legend>Send Me A Note</legend>
+              <textarea name="message" id="message" cols="50" rows="20"
+                  placeholder="Type your message here"></textarea>
+            </fieldset>
+            <div>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>&copy; 2024 Lyka's Muffin</div>
+      <div>All rights reserved</div>
+    </footer>
+
+</body>
+</html>
