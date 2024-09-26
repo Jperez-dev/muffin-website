@@ -22,15 +22,15 @@ body {
 
 header {
   width: 100%;
-  display: grid;                /* Use CSS Grid for layout */
+  display: grid;                 /* Use CSS Grid for layout */
   white-space: nowrap;
   overflow: auto;
 
   background-color: antiquewhite;
   background-image: url("image-muffins/pexels-castorlystock-3650437.jpg");
   background-size: cover;       /* Ensure the image covers the entire header */
-  background-position: center;   /* Center the image */
-  aspect-ratio: 1 / 0.67;                 /* Set height based on width (50% of viewport width) */
+  background-position: center;  /* Center the image */
+  aspect-ratio: 1 / 0.67;       /* Set height based on width (67% of viewport width) */
 }
 
 .nav-link {
@@ -46,7 +46,7 @@ header {
 }
 
 a {
-  color: rgb(142, 11, 11);              /* Use inherited color */
+  color: rgb(142, 11, 11);
   text-decoration: none;        /* Remove underline */
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -68,7 +68,7 @@ a:active {
 }
 
 .shop-name-container {
-  display: flex;               /* Use flex to center content */
+  display: flex;                /* Use flex to center content */
   justify-content: center;      /* Center content horizontally */
   align-items: center;          /* Center content vertically */
 }
@@ -92,7 +92,6 @@ header h1 {
   width: 100%;
   display: flex;                /* Use CSS Grid for layout */
   flex-flow: column nowrap;
-  /* border: 1px solid black; */
 }
 
 .about-container .about-heading {
@@ -105,33 +104,20 @@ header h1 {
 }
 
 .Our-story-container {
-  /* border: 1px solid black; */
   width: 100%;
   height: auto;
   background-color: rgb(249, 144, 195);
-  /* display: grid;
-  grid-template-columns: min(calc(7rem + 15vw), 100rem) 1fr;
-  grid-template-rows: 1fr 0.7fr;
-  grid-template-areas: 
-  'container-1 container-2'
-  'aside aside'; */
   padding: 1.2rem 1.2rem 0.5rem;
 }
 
 .Our-story-container div:nth-child(1) {
   width: min(55%, calc(10rem + 15vw));
   height: auto;
-  /* grid-area: container-1; */
   padding: calc(0.3rem + 5vw);
   float: left;
   align-items: center;
   
 }
-
-/*  .Our-story-container div:nth-child(2) {
-  grid-area: container-2;
-  padding-bottom: calc(0.1rem + 4vw);
-}  */
 
 .clear {
   clear: both;
@@ -155,11 +141,6 @@ aside p {
   margin-top: calc(0.2rem + 1.5vw);
   text-align: justify;
 }
-
-/* .Our-story-container div:nth-child(3) {
-  grid-area: container-3;
-  display: grid;
-} */
 
 .Our-story-container div:nth-child(1) figure {
   width: 100%;
@@ -193,18 +174,9 @@ aside p {
   text-align: justify;
 }
 
-/* .Our-story-container div:nth-child(3) p {
-  padding-bottom: calc(0.1rem + 4vw);
-  margin-right: calc(0.3rem + 2vw);
-  margin-left: calc(0.3rem + 2vw);
-  font-size: calc(0.3rem + 2vw);
-  text-align: justify;
-} */
-
 .about-container .image-ref {
-  /* overflow: hidden; */
   max-width: 100%; /* Prevents child from exceeding its parent */
-  aspect-ratio: 1 / 0.5; /* Optional, if you want to restrict height as well */
+  aspect-ratio: 1 / 0.5; 
   padding: calc(0.6em + 1.5vw);
 
   background-color: rgb(249, 144, 195);
@@ -228,9 +200,8 @@ aside p {
 
 .about-container .homemade {
   padding: calc(0.3rem + 2vw);
-  /* overflow: hidden; */
   max-width: 100%; /* Prevents child from exceeding its parent */
-  height: auto; /* Optional, if you want to restrict height as well */
+  height: auto;
   background-color: rgb(54, 8, 8);
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -249,7 +220,7 @@ aside p {
 }
 
 .homemade-headings h3 {
-  background-color: rgb(54, 8, 8);     /* Background for header */
+  background-color: rgb(54, 8, 8);
   color: rgb(249, 144, 195);
   font-family: "Graduate", serif;
   font-weight: 400;
@@ -261,8 +232,6 @@ aside p {
 .homemade-image-ref-2 {
   aspect-ratio: 1 / 1;
   display: flex; /* Use flexbox to center the figure */
-  /* justify-content: end;  *//* Center figure horizontally */
-  /* align-items: center; */ /* Center figure vertically */
 }
 
 .homemade-image-ref-1 {
@@ -281,7 +250,6 @@ justify-content: start;
 .homemade-image-ref-2 figure {
   width: 83%; /* Ensure the figure takes up 70% of the column */
   height: 83%; /* Maintain aspect ratio of figure */
-  /* overflow: hidden; */ /* Hide overflow to keep images inside the figure */
 }
 
 .homemade-image-ref-1 figure img,
@@ -292,16 +260,6 @@ justify-content: start;
   object-fit: cover; /* Ensure image covers the figure area while maintaining aspect ratio */
   border-radius: 7%; /* Add border-radius if needed */
 }
-
-/* .homemade-image-ref-1 figure { */
-  /* margin-right: calc(-0.2rem + -1.5vw); 
-  margin-top: calc(-0.2rem + -1vw); */
-/* } */
-
-/* .homemade-image-ref-2 figure { */
-  /* margin-top: calc(-0.2rem + -1vw);
-  margin-left: calc(-0.2rem + -1.5vw);  */
-/* } */
 
 .menu-container {
   scroll-margin-top: calc(1rem + 9vw);
@@ -386,7 +344,7 @@ justify-content: start;
 .open-hours-container {
   display: flex;
   flex-direction: column;
-  row-gap: calc(0.4rem + 2vw); /* Adjust this value as needed */
+  row-gap: calc(0.4rem + 2vw); 
   font-size: calc(0.25rem + 2.5vw);
 }
 
@@ -395,7 +353,7 @@ justify-content: start;
 }
 
 .open-hours-container li {
-  margin-bottom: calc(0.4rem + 1vw); /* Optional: add some margin for extra spacing */
+  margin-bottom: calc(0.4rem + 1vw); 
 }
 
 .open-hours-container span {
@@ -405,7 +363,7 @@ justify-content: start;
 .our-location-container {
   display: flex;
   flex-direction: column;
-  row-gap: 5vw; /* Adjust this value as needed */
+  row-gap: 5vw; 
   margin-bottom: 4vw;
   font-size: calc(0.25rem + 2.5vw);
 }
@@ -459,17 +417,17 @@ form input {
 }
   
 fieldset {
-  border: 1px solid #ccc; /* Add border style if needed */
+  border: 1px solid #ccc; /* Add border style */
   padding: calc(0.5rem + 2vw); /* Space inside the fieldset */
   
 }
 
 textarea {
   width: 100%; /* Full width of the fieldset */
-  aspect-ratio: 1 / 0.5; /* Set height as needed */
+  aspect-ratio: 1 / 0.5;
   padding: 3vw; /* Space inside the textarea */
   border: 1px solid #ccc; /* Border for the textarea */
-  border-radius: 3vw; /* Optional: rounded corners */
+  border-radius: 3vw; /* rounded corners */
   font-size: calc(0.25rem + 2.5vw);
 }
 
@@ -540,28 +498,12 @@ footer div {
   }
 
   .about-container .image-ref {
-    /* overflow: hidden;
-    max-width: 100%;  */
-    aspect-ratio: 1 / 0.5; /* Optional, if you want to restrict height as well */
+    aspect-ratio: 1 / 0.5;
     padding: calc(1.5em + 2.7vw);
-  
-    /* background-color: rgb(249, 144, 195);
-    background-image: url("image-muffins/pexels-energepic-com-27411-3805539.jpg");
-    background-size: cover;        */
   }
   
   .about-container .image-ref .tagline{
-    /* font-family: "Pacifico", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(237, 166, 198); */
     font-size: calc(2.1rem + 2.6vw);
-  
-    /* text-shadow: 
-    0.0625rem 0.0625rem 0 rgb(142, 157, 169, 1),  
-   -0.0625rem -0.0625rem 0 rgba(142, 157, 169, 1), 
-   -0.0625rem 0.0625rem 0 rgba(142, 157, 169, 1), 
-   0.0625rem -0.0625rem 0 rgba(142, 157, 169, 1); */
   }
   
   .homemade-headings h3 {
@@ -570,7 +512,7 @@ footer div {
   
   .homemade-image-ref-1 figure,
   .homemade-image-ref-2 figure {
-    width: min(82%, 15rem); /* Ensure the figure takes up 70% of the column */
+    width: min(82%, 15rem); /* Ensure the figure takes up 82% of the column */
     height: min(82%, 15rem);
   }
 
@@ -585,48 +527,26 @@ footer div {
   .product-container .product {
     border: calc(0.0882rem + 0.05vw) solid black;
     padding: calc(0.8rem + 4vw) calc(1rem + 3vw) calc(0.5rem + 2vw);
-    /*
-    width: min(100%, 24rem);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
     font-size: calc(0.4rem + 1.3vw);
   }
   .product figure figcaption {
-    /* font-weight: bolder;
-    max-width: 100%;
-    margin: 0.8rem; */
     font-size: calc(0.5rem + 1.3vw);
-    /* text-align: center;
-    white-space: nowrap; */
   }
 
   .contact-us-container h2 {
-    /* text-align: center; */
     font-size: calc(0.8rem + 2vw);
-   /*  margin-bottom: 6vw; */
   }
   
   .open-hours-container, .our-location-container, .inquiries-container, .contact-us-container form {
-    /* display: flex;
-    flex-direction: column;
-    row-gap: 5vw;  */
     font-size: calc(0.7rem + 1vw);
   }
 
   form input {
     width: 65%;
-    /* height: auto;
-    margin-bottom: 3vw;
-    border-radius: 8vw; */
     padding: 1.3vw;
-    /*border: 0.1rem solid gray; */
     font-size: calc(0.55rem + 1vw);
   }
   textarea {
-    /* padding: 3vw; */ /* Space inside the textarea */
-    /* border-radius: 5vw; */ /* Optional: rounded corners */
     aspect-ratio: 1 / 0.4;
     font-size: calc(0.7rem + 1vw);
   }
@@ -659,7 +579,7 @@ footer div {
 
   .homemade-image-ref-1 figure,
   .homemade-image-ref-2 figure {
-    width: min(82%, 18rem); /* Ensure the figure takes up 70% of the column */
+    width: min(82%, 18rem); /* Ensure the figure takes up 82% of the column */
     height: min(82%, 18rem);
   }
 
@@ -681,12 +601,6 @@ footer div {
 
   .product-container .product {
     border: calc(0.0655rem + 0.1vw) solid black;
-    /* padding: calc(0.8rem + 4vw) calc(0.9rem + 7vw) calc(0.5rem + 2vw);
-    width: min(100%, 24rem);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
     font-size: calc(0.33rem + 1.2vw);
     padding: calc(1rem + 1vw) calc(1rem + 1vw) calc(0.5rem + 1vw);
     width: min(40%, 16rem);
@@ -703,21 +617,11 @@ footer div {
   }
 
   .product figure figcaption {
-    /* font-weight: bolder;
-    max-width: 100%;
-    margin: 0.8rem; */
     font-size: calc(0.4rem + 1.2vw);
-    /* text-align: center;
-    white-space: nowrap; */
   }
 
   .contact-us-container {
     scroll-margin-top: calc(1rem + 9vw);
-    /* display: flex;
-    flex-direction: column;
-    padding: 6.5vw;
-    row-gap: 3vw;
-    color: antiquewhite; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto ;
@@ -747,14 +651,10 @@ footer div {
   }
 
   .contact-us-container h2 {
-    /* text-align: center; */
     font-size: calc(1rem + 1vw);
-   /*  margin-bottom: 6vw; */
   }
   
   .open-hours-container, .our-location-container, .inquiries-container, .contact-us-container form {
-    /* display: flex;
-    flex-direction: column; */
     row-gap: 1.8rem;
     font-size: calc(0.75rem + 0.75vw);
   }
@@ -766,11 +666,9 @@ footer div {
 
   form input {
     width: 55%;
-    /* height: auto;  */
     margin-bottom: 3vw;
     border-radius: 8vw; 
     padding: calc(0.6rem + 0.2vw);
-    /*border: 0.1rem solid gray; */
     font-size: calc(0.6rem + 0.6vw);
   }
 
@@ -779,8 +677,7 @@ footer div {
   }
 
   textarea {
-    /* padding: 3vw; */ /* Space inside the textarea */
-    border-radius: 3vw; /* Optional: rounded corners */
+    border-radius: 3vw;
     aspect-ratio: 1 / 0.35;
     font-size: calc(0.6rem + 0.6vw);
   }
@@ -794,30 +691,18 @@ footer div {
 
 @media screen and (min-width: 992px) {
   header {
-    aspect-ratio: 1 / 0.6;                 /* Set height based on width (50% of viewport width) */
+    aspect-ratio: 1 / 0.6;
   }
 
   .Our-story-container div:nth-child(1) {
     width: min(40%, calc(16rem + 14vw));
     margin-top: -1vw;
     height: auto;
-    /* grid-area: container-1; */
-    /* padding: calc(0.3rem + 5vw);
-    float: left;
-    align-items: center; */
     
   }
 
   .nav-link {
-    /* background-color: rgb(249, 144, 195);
-    display: flex;
-    justify-content: center; */
     column-gap: calc(1rem + 1vw);
-    /* white-space: nowrap;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0; */
   }
   
   a {
@@ -832,9 +717,7 @@ footer div {
 
   .about-container .homemade {
     padding: calc(0.3rem + 2vw);
-    /* overflow: hidden; */
-    max-width: 100%; /* Prevents child from exceeding its parent */
-    /* height: auto; */ /* Optional, if you want to restrict height as well */
+    max-width: 100%;
     aspect-ratio: 1 / 0.53;
     background-color: rgb(54, 8, 8);
     display: grid;
@@ -851,13 +734,11 @@ footer div {
   .homemade-image-ref-2 {
     aspect-ratio: 1 / 0.8;
     display: flex; /* Use flexbox to center the figure */
-    /* justify-content: end;  *//* Center figure horizontally */
-    /* align-items: center; */ /* Center figure vertically */
   }
 
   .homemade-image-ref-1 figure,
   .homemade-image-ref-2 figure {
-    width: min(70%, 22rem); /* Ensure the figure takes up 70% of the column */
+    width: min(70%, 22rem);
     height: min(87.5%, 22rem);
   }
 
@@ -879,12 +760,6 @@ footer div {
 
   .product-container .product {
     border: calc(0.0655rem + 0.1vw) solid black;
-    /* padding: calc(0.8rem + 4vw) calc(0.9rem + 7vw) calc(0.5rem + 2vw);
-    width: min(100%, 24rem);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
     font-size: calc(0.5rem + 0.8vw);
     padding: calc(1rem + 1vw) calc(1rem + 1vw) calc(0.5rem + 1vw);
     width: 25%;
@@ -901,21 +776,14 @@ footer div {
   }
 
   .product figure figcaption {
-    /* font-weight: bolder;
-    max-width: 100%;
-    margin: 0.8rem; */
     font-size: calc(0.6rem + 0.6vw);
-    /* text-align: center;
-    white-space: nowrap; */
   }
 
   form input {
     width: 44%;
-    /* height: auto;  */
     margin-bottom: 3vw;
     border-radius: 8vw; 
     padding: calc(0.6rem + 0.2vw);
-    /*border: 0.1rem solid gray; */
     font-size: calc(0.6rem + 0.6vw);
   }
 
@@ -924,8 +792,7 @@ footer div {
   }
 
   textarea {
-    /* padding: 3vw; */ /* Space inside the textarea */
-    border-radius: 3vw; /* Optional: rounded corners */
+    border-radius: 3vw;
     aspect-ratio: 1 / 0.25;
     font-size: calc(0.6rem + 0.6vw);
   }
@@ -1092,22 +959,7 @@ footer div {
 
   .contact-us-container {
     scroll-margin-top: calc(1rem + 9vw);
-    /* display: flex;
-    flex-direction: column;
-    padding: 6.5vw;
-    row-gap: 3vw;
-    color: antiquewhite; */
     padding: 4rem 10rem 4rem;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto ;
-    grid-template-areas: 
-    'h2-area h2-area'
-    'open-hours-area our-location-area'
-    'inquiries-area inquiries-area';
-
-  
-    background-color: black */
   }
 
   .contact-us-container h2 {
@@ -1128,8 +980,6 @@ footer div {
   }
 
   .open-hours-container, .our-location-container, .inquiries-container, .contact-us-container form {
-    /* display: flex;
-    flex-direction: column; */
     row-gap: 3rem;
     font-size: 2rem;
   }
