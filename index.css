@@ -9,6 +9,8 @@
 html {
   scroll-behavior: smooth;
   overflow: auto;
+  background-color: rgb(249, 144, 195);
+  background-image: radial-gradient(aliceblue, rgb(249, 144, 195));
 }
 body {
   font-family: "Roboto", sans-serif;
