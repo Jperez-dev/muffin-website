@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fascinate+Inline&family=Graduate&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Spicy+Rice&family=Tangerine:wght@400;700&display=swap');
 
+/* || Reset */
 * {
   margin: 0;
   padding: 0;
@@ -343,11 +344,14 @@ justify-content: start;
   margin-bottom: calc(0.4rem + 2vw);
 }
 
-.open-hours-container {
+.open-hours-container, .our-location-container, .inquiries-container, .contact-us-container form {
   display: flex;
   flex-direction: column;
-  row-gap: calc(0.4rem + 2vw); 
   font-size: calc(0.25rem + 2.5vw);
+}
+
+.open-hours-container {
+  row-gap: calc(0.4rem + 2vw); 
 }
 
 .open-hours-container ul{
@@ -363,11 +367,8 @@ justify-content: start;
 }
 
 .our-location-container {
-  display: flex;
-  flex-direction: column;
   row-gap: 5vw; 
   margin-bottom: 4vw;
-  font-size: calc(0.25rem + 2.5vw);
 }
 
 .our-location-container address {
@@ -379,10 +380,7 @@ justify-content: start;
 }
 
 .inquiries-container {
-  display: flex;
-  flex-direction: column;
   row-gap: calc(0.4rem + 1.5vw);
-  font-size: calc(0.25rem + 2.5vw);
 }
 
 .inquiries-container p:nth-child(1), .inquiries-container p:nth-child(3) {
@@ -395,10 +393,7 @@ justify-content: start;
 
 .contact-us-container form {
   margin-top: calc(0.4rem + 2vw);
-  display: flex;
-  flex-direction: column;
   row-gap: calc(0.3rem + 0.8vw);
-  font-size: calc(0.25rem + 2.5vw);
 }
 
 form label {
@@ -476,6 +471,7 @@ footer div {
   text-align: center;
 }
 
+/* || Small Screen Size */
 @media screen and (min-width: 576px) {
   .about-container .about-heading {
     font-size: calc(0.4rem + 2vw);
@@ -560,6 +556,7 @@ footer div {
 
 }
 
+    /* || Medium Screen Size */
 @media screen and (min-width: 768px) {
   .about-container .about-heading {
     font-size: calc(0.8rem + 1vw);
@@ -691,6 +688,7 @@ footer div {
 
 }
 
+    /* || Large Screen Size */
 @media screen and (min-width: 992px) {
   header {
     aspect-ratio: 1 / 0.6;
@@ -718,18 +716,7 @@ footer div {
 
 
   .about-container .homemade {
-    padding: calc(0.3rem + 2vw);
-    max-width: 100%;
     aspect-ratio: 1 / 0.53;
-    background-color: rgb(54, 8, 8);
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    grid-template-rows: calc(0.3rem + 7vw) 1fr;   /* Automatic height for rows */
-    grid-template-areas: 
-    'heading heading'
-    'homemade-image-1 homemade-image-2';
-    column-gap: 4vw;
-    row-gap: 3vw;
   }
 
   .homemade-image-ref-1,
@@ -754,27 +741,16 @@ footer div {
 
   .product-container {
     margin-top: calc(0.5rem + 0.5vw);
-    flex-flow: row wrap;
-    justify-content: center;
-    column-gap: calc(1rem + 3vw);
     row-gap: calc(2rem + 1vw);
   }
 
   .product-container .product {
-    border: calc(0.0655rem + 0.1vw) solid black;
     font-size: calc(0.5rem + 0.8vw);
-    padding: calc(1rem + 1vw) calc(1rem + 1vw) calc(0.5rem + 1vw);
     width: 25%;
-    height: auto;
   }
 
   .product figure {
     margin-top: calc(-2rem + -4vw);
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
   }
 
   .product figure figcaption {
@@ -782,11 +758,7 @@ footer div {
   }
 
   form input {
-    width: 44%;
-    margin-bottom: 3vw;
-    border-radius: 8vw; 
-    padding: calc(0.6rem + 0.2vw);
-    font-size: calc(0.6rem + 0.6vw);
+    width: 44%; 
   }
 
   fieldset {
@@ -794,9 +766,7 @@ footer div {
   }
 
   textarea {
-    border-radius: 3vw;
     aspect-ratio: 1 / 0.25;
-    font-size: calc(0.6rem + 0.6vw);
   }
 
   button {
@@ -807,6 +777,7 @@ footer div {
 
 }
 
+    /* || XL Screen Size */
 @media screen and (min-width: 1400px) {
   header {
     width: 100%;
